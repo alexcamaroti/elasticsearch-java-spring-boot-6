@@ -8,7 +8,9 @@ For visualization of the data, Kibana is being used.
 ### Prerequisites
 
 [Elasticsearch v6.4.2](https://www.elastic.co/downloads/elasticsearch)
+
 [Kibana v6.4.2](https://www.elastic.co/downloads/kibana)
+
 [Maven](https://maven.apache.org/download.cgi)
 
 
@@ -19,8 +21,3 @@ For visualization of the data, Kibana is being used.
 ## Meta
 
 Alex Camaroti – [Linkedin](https://www.linkedin.com/in/alexcamaroti/) – alexcamaroti@gmail.com
-
-
-```
-Give examples
-```
