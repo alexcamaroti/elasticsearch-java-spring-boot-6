@@ -1,5 +1,7 @@
 package br.com.camaroti.alex.produtosearch.model;
 
+import java.util.Arrays;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
@@ -19,6 +21,21 @@ public class Product {
 	public Product() {
 		super();
 	}
+
+	
+	
+
+	public Product(String name, String category, String subcategory, String[] tags, String provider, Double price) {
+		super();
+		this.name = name;
+		this.category = category;
+		this.subcategory = subcategory;
+		this.tags = tags;
+		this.provider = provider;
+		this.price = price;
+	}
+
+
 
 
 	public Product(String id, String name, String category, String subcategory, String[] tags, String provider,
@@ -101,6 +118,15 @@ public class Product {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", category=" + category + ", subcategory=" + subcategory
+				+ ", tags=" + Arrays.toString(tags) + ", provider=" + provider + ", price=" + price + "]";
 	}
 	
 	
